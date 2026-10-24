@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Rock & Metal - Radio Online</title>
+    <meta name="description" content="Reproductor oficial de Rock & Metal Radio Online. Streaming 24/7 en vivo, ecualizador animado, metadatos en tiempo real, historial y soporte de controles en segundo plano." />
+    <meta name="theme-color" content="#0a0a0d" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="icon" type="image/jpeg" href="/assets/aistudio/logo_rock___metal_701d5405.jpeg" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="music.radio_station" />
+    <meta property="og:title" content="Rock & Metal - Radio Online" />
+    <meta property="og:description" content="Solo Rock · Solo Metal · 24 Horas de transmisión en vivo con el mejor sonido." />
+    <meta property="og:image" content="/assets/aistudio/logo_rock___metal_701d5405.jpeg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rock & Metal - Radio Online" />
+    <meta name="twitter:description" content="Solo Rock · Solo Metal · 24 Horas de transmisión en vivo con el mejor sonido." />
+    <meta name="twitter:image" content="/assets/aistudio/logo_rock___metal_701d5405.jpeg" />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/assets/aistudio/logo_rock___metal_701d5405.jpeg" />
+
+    <!-- Google Fonts for heavy metal and modern industrial typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Oswald:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Teko:wght@600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#070709] text-gray-100 select-none antialiased min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch((err) => {
+            console.debug('ServiceWorker registration note:', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,6 @@
+{
+  "name": "Rock & Metal - Radio Online",
+  "description": "Reproductor oficial de Rock & Metal Radio Online. Streaming 24/7 en vivo, ecualizador animado, metadatos en tiempo real, historial y soporte de controles en segundo plano.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
